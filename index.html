@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <main>
+        <h1 id="title">Survey Form</h1>
+        <p id="description">Thanks for taking this survey.</p>
+        <form id="survey-form">
+            <h4>Information about you:</h4>
+            <label id="name-label">Name<input type="text" id="name" placeholder="Enter you name" required>
+            </label>
+            <label id="email-label">Email<input type="email" id="email" placeholder="Enter your email" required>
+            </label>
+            <label id="number-label">Number<input type="number" id="number" min="8" max="120"
+                    placeholder="Enter your number" required>
+            </label>
+            <label> Enter your region:
+                <select id="dropdown">
+                    <option>America</option>
+                    <option>Europe</option>
+                    <option>Asia & Middle East</option>
+                    <option>Australia</option>
+                    <option>Africa</option>
+                </select>
+            </label>
+            
+            <h4>Select your gender:</h4>
+            <label class="labels">
+                <input type="radio" value="male" name="gender" class="ratio" checked> Male
+            </label>
+            <label>
+                <input type="radio" value="female" name="gender" class="ratio"> Female
+            </label>
+            <h4>Select your interests:</h4>
+            <label class="labels">
+                <input type="checkbox" value="science" class="ratio"> Science
+            </label>
+            <label>
+                <input type="checkbox" value="socials" class="ratio"> Socials
+            </label>
+            <h4>Enter your hobbies:</h4>
+            <label>
+                <textarea cols="90" rows="5" placeholder="What are you hobbies..."></textarea>
+            </label>
+            <input type="submit" id="submit">
+        </form>
+    </main>
+</body>
+
+</html>
